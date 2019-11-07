@@ -5,9 +5,113 @@ print("你好世界")
 print("hello hello")
 # 这是第二个注释
 print("hello world")
+# 多行注释用3双引号
 """
 这是一个多行注释
 。。。
 。。。
 结束了
 """
+# 用一个变量记录QQ号码
+qq_number = "1234567"
+# 用一个变量记录QQ密码
+qq_password = "123"
+print(qq_number)
+print(qq_password)
+#在用print输出变量的值
+
+# 定义苹果的单价
+price = 8.5
+# 挑选苹果
+weight = 7.5
+# 计算付款金额
+money = price * weight
+# 只要买苹果，就返回5块钱
+money = money - 5
+print(money)
+# 运用了python的运算，%（取余），//（取整）
+
+数据类型:
+"""                 
+用变量保存小明的个人信息
+姓名：小明
+年龄：18                     
+性别：男
+身高：1.75m
+体重：75kg
+"""     --------------------------->3引号注释多行
+name = "小明"
+age = 18        --->int
+gender = True   --->bool
+height = 1.75   --->float
+weight = 75
+print(name)
+print(age)
+print(gender)
+print(height)
+print(weight)
+# 数据类型分为数字型和非数字型
+# 数字型：
+# 整型：（int）
+# 浮点型：（float）
+# 布尔型：（bool）
+# 非数字型：
+# 字符串
+# 列表
+# 元组
+# 字典
+# 查看数据的类型：type
+# True为1
+# False为0 可以直接参与数值运算
+# input（） 输出的都是str, 用int，float去转换类型
+
+占位符的运用：
+%d　　整数占位符
+>>>'我考了%d分' % 20
+'我考了20分'
+>>>'我考了%d分' % 20.5
+;我考了20分'
+>>>"我考了%d分，进步了%d分" % (50,10)
+"我考了50分，进步了10分"
+%d只能占位整数，即使是原数字为浮点数他也会强制转换变成整数。
+
+%f　　浮点数占位符
+>>>"我考了%f" % 66.666
+"我考了66.666000"
+>>>'我考了%f' % 66
+‘我考了66.000000'
+>>>"我考了%f，进步了%.2f" % (66,12.369)
+"我考了66.000000，进步了12.36"
+%f只能占位浮点数，%.xf 则是精确至小数点后x位。
+
+%s　　字符串占位符
+>>>'%s' % Ture
+'Ture'
+>>>'%s,%s' % (123,abc)
+'123,abc'
+%s占位字符串，应用最多。
+
+# price_str = input("苹果的单价：")
+# weight_str = input("苹果的重量：")
+price = float(input("苹果的单价："))
+weight = float(input("苹果的重量："))
+money = price * weight
+print("需要支付:", money)
+print("苹果的单价：%.2f,苹果的重量：%.2f,需要支付:%.2f" % (price,weight,money))
+
+# name = input("请输入你的名字:")
+# print("我的名字叫%s，请多关照！" % name)
+student_no = 1
+print("我的学号是%03d" % student_no)
+
+# 定义一个小数scale，输出比例:10.00%,
+# 两个%%为%
+scale = 0.25
+print("输出比例:%.2f%%" % (scale * 100))
+
+# 变量命名：
+# 标识符：字母，数字，下划线，不能以数字开头，区分大小写
+# 关键字：python已经内置的变量，
+# 查看关键字：import keyword,print(keyword.kwlist)
+# 变量的命名尽量以所有单词都用小写字母，用下划线分隔
+
